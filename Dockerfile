@@ -14,4 +14,4 @@ RUN pip install -r requirements.txt \
   && rm -rf /usr/local/python3/lib/python3.9/lzma.py \
   && cp -f lib/lzma.py /usr/local/python3/lib/python3.9
   
-CMD [ "sh", "-c", "python3 detectCS.py -H 127.0.0.1 -P 5001" ]
+CMD [ "sh", "-c", "python detectCS.py -H 127.0.0.1 -P 5001" ]
